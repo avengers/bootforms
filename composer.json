@@ -1,7 +1,11 @@
 {
-    "name": "adamwathan/bootforms",
+    "name": "avengers/bootforms",
     "description": "Just a Formbuilder with some Bootstrap specific conveniences. Remembers old input, retrieves error messages and handles all your boilerplate Bootstrap markup automatically.",
     "authors": [
+        {
+            "name": "Emir Karşıyakalı",
+            "email": "emirkarsiyakali@gmail.com"
+        },
         {
             "name": "Adam Wathan",
             "email": "adam.wathan@gmail.com"
@@ -19,7 +23,7 @@
     },
     "autoload": {
         "psr-0": {
-            "AdamWathan\\BootForms": "src/"
+            "TheAvengers\\BootForms": "src/"
         }
     },
     "minimum-stability": "stable"

@@ -4,7 +4,7 @@ use TheAvengers\BootForms\Elements\CheckGroup;
 use TheAvengers\BootForms\Elements\HelpBlock;
 use TheAvengers\BootForms\Elements\HorizontalFormGroup;
 use TheAvengers\BootForms\Elements\OffsetFormGroup;
-use AdamWathan\Form\FormBuilder;
+use TheAvengers\Form\FormBuilder;
 
 class HorizontalFormBuilder extends BasicFormBuilder
 {

@@ -1,6 +1,6 @@
 <?php namespace TheAvengers\BootForms\Elements;
 
-use AdamWathan\Form\Elements\Text;
+use TheAvengers\Form\Elements\Text;
 
 class InputGroup extends Text
 {

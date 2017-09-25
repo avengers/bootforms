@@ -5,7 +5,7 @@ use TheAvengers\BootForms\Elements\FormGroup;
 use TheAvengers\BootForms\Elements\GroupWrapper;
 use TheAvengers\BootForms\Elements\HelpBlock;
 use TheAvengers\BootForms\Elements\InputGroup;
-use AdamWathan\Form\FormBuilder;
+use TheAvengers\Form\FormBuilder;
 
 class BasicFormBuilder
 {

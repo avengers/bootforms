@@ -1,7 +1,7 @@
 <?php namespace TheAvengers\BootForms\Elements;
 
-use AdamWathan\Form\Elements\Element;
-use AdamWathan\Form\Elements\Label;
+use TheAvengers\Form\Elements\Element;
+use TheAvengers\Form\Elements\Label;
 
 class FormGroup extends Element
 {

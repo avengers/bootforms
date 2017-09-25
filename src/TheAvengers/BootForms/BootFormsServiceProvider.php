@@ -1,8 +1,8 @@
 <?php namespace TheAvengers\BootForms;
 
-use AdamWathan\Form\ErrorStore\IlluminateErrorStore;
-use AdamWathan\Form\FormBuilder;
-use AdamWathan\Form\OldInput\IlluminateOldInputProvider;
+use TheAvengers\Form\ErrorStore\IlluminateErrorStore;
+use TheAvengers\Form\FormBuilder;
+use TheAvengers\Form\OldInput\IlluminateOldInputProvider;
 use Illuminate\Support\ServiceProvider;
 
 class BootFormsServiceProvider extends ServiceProvider

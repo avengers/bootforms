@@ -1,6 +1,6 @@
 <?php
 
-use AdamWathan\BootForms\Elements\HelpBlock;
+use TheAvengers\BootForms\Elements\HelpBlock;
 
 class HelpBlockTest extends PHPUnit_Framework_TestCase
 {

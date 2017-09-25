@@ -1,9 +1,9 @@
-<?php namespace AdamWathan\BootForms;
+<?php namespace TheAvengers\BootForms;
 
-use AdamWathan\BootForms\Elements\CheckGroup;
-use AdamWathan\BootForms\Elements\HelpBlock;
-use AdamWathan\BootForms\Elements\HorizontalFormGroup;
-use AdamWathan\BootForms\Elements\OffsetFormGroup;
+use TheAvengers\BootForms\Elements\CheckGroup;
+use TheAvengers\BootForms\Elements\HelpBlock;
+use TheAvengers\BootForms\Elements\HorizontalFormGroup;
+use TheAvengers\BootForms\Elements\OffsetFormGroup;
 use AdamWathan\Form\FormBuilder;
 
 class HorizontalFormBuilder extends BasicFormBuilder

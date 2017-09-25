@@ -1,13 +1,10 @@
-> **Important: This package is not actively maintained.** For bug fixes and new features, please fork.
-
 BootForms
 ===============
 
-[![This Project Has Been Deprecated.](http://www.repostatus.org/badges/0.1.0/abandoned.svg)](http://www.repostatus.org/#abandoned)
-[![Code Climate](https://codeclimate.com/github/adamwathan/bootforms/badges/gpa.svg)](https://codeclimate.com/github/adamwathan/bootforms)
-[![Coverage Status](https://coveralls.io/repos/adamwathan/bootforms/badge.svg?branch=master)](https://coveralls.io/r/adamwathan/bootforms?branch=master)
+[![Code Climate](https://codeclimate.com/github/avengers/bootforms/badges/gpa.svg)](https://codeclimate.com/github/avengers/bootforms)
+[![Coverage Status](https://coveralls.io/repos/avengers/bootforms/badge.svg?branch=master)](https://coveralls.io/r/avengers/bootforms?branch=master)
 
-BootForms builds on top of my more general [Form](https://github.com/adamwathan/form) package by adding another layer of abstraction to rapidly generate markup for standard Bootstrap 3 forms. Probably not perfect for your super custom branded ready-for-release apps, but a *huge* time saver when you are still in the prototyping stage!
+BootForms builds on top of my more general [Form](https://github.com/avengers/form) package by adding another layer of abstraction to rapidly generate markup for standard Bootstrap 3 forms. Probably not perfect for your super custom branded ready-for-release apps, but a *huge* time saver when you are still in the prototyping stage!
 
 - [Installation](#installing-with-composer)
 - [Using BootForms](#using-bootforms)
@@ -24,7 +21,7 @@ BootForms builds on top of my more general [Form](https://github.com/adamwathan/
 You can install this package via Composer by running this command in your terminal in the root of your project:
 
 ```bash
-composer require adamwathan/bootforms
+composer require avengers/bootforms
 ```
 
 ### Laravel
@@ -36,7 +33,7 @@ Modify the `providers` array in `config/app.php` to include the `BootFormsServic
 ```php
 'providers' => [
     //...
-    'AdamWathan\BootForms\BootFormsServiceProvider'
+    'TheAvengers\BootForms\BootFormsServiceProvider'
   ],
 ```
 
@@ -45,7 +42,7 @@ Add the `BootForm` facade to the `aliases` array in `config/app.php`:
 ```php
 'aliases' => [
     //...
-    'BootForm' => 'AdamWathan\BootForms\Facades\BootForm'
+    'BootForm' => 'TheAvengers\BootForms\Facades\BootForm'
   ],
 ```
 
@@ -60,19 +57,19 @@ BootForm::text('Email', 'email');
 Usage outside of Laravel is a little trickier since there's a bit of a dependency stack you need to build up, but it's not too tricky.
 
 ```php
-$formBuilder = new AdamWathan\Form\FormBuilder;
+$formBuilder = new TheAvengers\Form\FormBuilder;
 
 $formBuilder->setOldInputProvider($myOldInputProvider);
 $formBuilder->setErrorStore($myErrorStore);
 $formBuilder->setToken($myCsrfToken);
 
-$basicBootFormsBuilder = new AdamWathan\BootForms\BasicFormBuilder($formBuilder);
-$horizontalBootFormsBuilder = new AdamWathan\BootForms\HorizontalFormBuilder($formBuilder);
+$basicBootFormsBuilder = new TheAvengers\BootForms\BasicFormBuilder($formBuilder);
+$horizontalBootFormsBuilder = new TheAvengers\BootForms\HorizontalFormBuilder($formBuilder);
 
-$bootForm = new AdamWathan\BootForms\BootForm($basicBootFormsBuilder, $horizontalBootFormsBuilder);
+$bootForm = new TheAvengers\BootForms\BootForm($basicBootFormsBuilder, $horizontalBootFormsBuilder);
 ```
 
-> Note: You must provide your own implementations of `AdamWathan\Form\OldInputInterface` and `AdamWathan\Form\ErrorStoreInterface` when not using the implementations meant for Laravel.
+> Note: You must provide your own implementations of `TheAvengers\Form\OldInputInterface` and `TheAvengers\Form\ErrorStoreInterface` when not using the implementations meant for Laravel.
 
 ## Using BootForms
 
@@ -126,7 +123,7 @@ BootForm::open()->get()->action('/users');
 BootForm::text('First Name', 'first_name')->defaultValue('John Doe');
 ```
 
-For more information about what's possible, check out the documentation for [my basic Form package.](https://github.com/adamwathan/form)
+For more information about what's possible, check out the documentation for [my basic Form package.](https://github.com/avengers/form)
 
 ### Reduced Boilerplate
 
@@ -236,7 +233,7 @@ You can add a help block underneath a form element using the `helpBlock()` helpe
 
 #### Model Binding
 
-BootForms makes it easy to bind an object to a form to provide default values. Read more about it [here](https://github.com/adamwathan/form#model-binding).
+BootForms makes it easy to bind an object to a form to provide default values. Read more about it [here](https://github.com/avengers/form#model-binding).
 
 ```php
 BootForm::open()->action( route('users.update', $user) )->put()
@@ -247,3 +244,8 @@ BootForm::close()
 ## Related Resources
 
 - [Laravel Translatable BootForms](https://github.com/Propaganistas/Laravel-Translatable-Bootforms), integrates BootForms with Dimsav's [Laravel Translatable](https://github.com/dimsav/laravel-translatable) package
+
+## Contributors
+
+- [AdamWathan](https://github.com/avengers) Adam Wathan - creator
+- [emir](https://github.com/emir) Emir Karşıyakalı - maintainer

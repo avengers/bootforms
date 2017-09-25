@@ -1,6 +1,6 @@
 <?php
 
-use AdamWathan\BootForms\BasicFormBuilder;
+use TheAvengers\BootForms\BasicFormBuilder;
 use AdamWathan\Form\FormBuilder;
 
 class BasicFormBuilderTest extends PHPUnit_Framework_TestCase

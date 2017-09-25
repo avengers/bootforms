@@ -2,7 +2,7 @@ BootForms
 ===============
 
 [![Code Climate](https://codeclimate.com/github/avengers/bootforms/badges/gpa.svg)](https://codeclimate.com/github/avengers/bootforms)
-[![Coverage Status](https://coveralls.io/repos/avengers/bootforms/badge.svg?branch=master)](https://coveralls.io/r/avengers/bootforms?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/avengers/bootforms/badge.svg?branch=master)](https://coveralls.io/github/avengers/bootforms?branch=master)
 
 BootForms builds on top of my more general [Form](https://github.com/avengers/form) package by adding another layer of abstraction to rapidly generate markup for standard Bootstrap 3 forms. Probably not perfect for your super custom branded ready-for-release apps, but a *huge* time saver when you are still in the prototyping stage!
 

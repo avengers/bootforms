@@ -2,7 +2,7 @@
 
 use TheAvengers\BootForms\Elements\FormGroup;
 use TheAvengers\BootForms\Elements\HelpBlock;
-use AdamWathan\Form\FormBuilder;
+use TheAvengers\Form\FormBuilder;
 
 class FormGroupTest extends PHPUnit_Framework_TestCase
 {

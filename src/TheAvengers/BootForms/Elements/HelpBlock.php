@@ -1,6 +1,6 @@
 <?php namespace TheAvengers\BootForms\Elements;
 
-use AdamWathan\Form\Elements\Element;
+use TheAvengers\Form\Elements\Element;
 
 class HelpBlock extends Element
 {
